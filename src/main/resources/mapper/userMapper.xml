@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="tws.dao.EmployeeMapper">
+    <select id="selectAll" resultType="tws.model.Employee">
+        select * from `employee`;
+    </select>
+
+    <select id="insert" resultType="int" parameterType="tws.model.Employee">
+       insert into `employee`(`id`,`name`,`age`) values(#{employee.id},#{employee.name},#{employee.age});
+    </select>
+</mapper>
