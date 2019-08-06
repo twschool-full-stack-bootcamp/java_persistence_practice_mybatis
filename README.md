@@ -9,8 +9,8 @@
 
 ## Hint
 
-- create Entity to present your data structure
-- create Repository for MyBatis integration 
-- create Mapper under resources package 
+- create `Entity` to present your data structure
+- create `Repository` for MyBatis integration 
+- create `Mapper` under resources package 
 - write sql statements 
-- use dao for your business to access to database
+- use `Repository` for your business to access to database
