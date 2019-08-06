@@ -1,4 +1,4 @@
-package tws.model;
+package tws.entity;
 
 import java.io.Serializable;
 
@@ -8,7 +8,7 @@ public class Employee implements Serializable {
     private String age;
 
     public Employee() {
-        
+
     }
 
     public Employee(int id, String name, String age) {

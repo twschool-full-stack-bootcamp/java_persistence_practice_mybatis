@@ -1,6 +1,6 @@
-package tws.dao;
+package tws.repository;
 
-import tws.model.Employee;
+import tws.entity.Employee;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
