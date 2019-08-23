@@ -17,6 +17,6 @@
 
 ## How to use H2
 
-- `schema.sql` will be loaded and init database when application is starting
+- `schema_2.sql` will be loaded and init database when application is starting
 - navigate to web console`http://localhost:8080/h2-console`
 - put `jdbc:h2:mem:tws_persistence_db` in `JDBC URL` field
