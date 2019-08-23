@@ -7,11 +7,27 @@ logging:
     org:
       springframework:
         web: DEBUG
+#spring:
+#  datasource:
+#    url:  jdbc:h2:mem:tws_persistence_db
+#  h2:
+#    console:
+#      enabled: true
+
+# Spring 数据源 (DataSourceAutoConfiguration & DataSourceProperties)
 spring:
   datasource:
-    url:  jdbc:h2:mem:tws_persistence_db
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:bootexample;MODE=Oracle
+    username: root
+    password: root
   h2:
     console:
       enabled: true
+      path: /h2-console
+      settings:
+        web-allow-others: true
 mybatis:
   mapper-locations: "classpath:mapper/*Mapper.xml"
+
+
